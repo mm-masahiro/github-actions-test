@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/mm-masahiro/github-actions-pra#readme",
   "devDependencies": {
-    "mocha": "^9.1.2"
+    "@cybozu/eslint-config": "^14.0.3",
+    "eslint": "^7.32.0",
+    "mocha": "^9.1.2",
+    "prettier": "^2.4.1"
   }
 }
