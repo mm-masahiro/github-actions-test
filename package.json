@@ -1,0 +1,18 @@
+{
+  "name": "github-actions-pra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mm-masahiro/github-actions-pra.git",
+  "author": "mm-masahiro <hand5.mm9.mzh@gmail.com>",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@cybozu/eslint-config": "^18.0.0",
+    "eslint": "^8.34.0",
+    "mocha": "^10.2.0",
+    "prettier": "^2.8.4"
+  }
+}
