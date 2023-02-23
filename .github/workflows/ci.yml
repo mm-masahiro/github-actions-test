@@ -7,13 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.0.0
-      - name: Set Node.js 14
-        uses: actions/setup-node@v2.0.0
+        uses: actions/checkout@v3.0.0
+      - name: Set Node.js 16
+        uses: actions/setup-node@v3.0.0
         with:
-          node-version: "12"
+          node-version: "16"
       - name: Install dependencies
-        run: npm ci
+        run: yarn install
       - name: Test
         run: yarn test
   lint:
@@ -21,12 +21,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.0.0
-      - name: Set Node.js 14
-        uses: actions/setup-node@v2.0.0
+        uses: actions/checkout@v3.0.0
+      - name: Set Node.js 16
+        uses: actions/setup-node@v3.0.0
         with:
-          node-version: "12"
+          node-version: "16"
       - name: Install dependencies
-        run: npm ci
+        run: yarn install
       - name: Lint
         run: yarn lint
